@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 import logoImg from '@/assets/logo.png'
 import classes from '@/components/main-header.module.css'
@@ -7,7 +8,7 @@ export default function MainHeader() {
 	return (
 		<header className={classes.header}>
 			<Link className={classes.logo} href='/'>
-				<img src={logoImg.src} alt='A plate with some food' />
+				<Image src={logoImg} alt='A plate with some food' priority />
 			</Link>
 
 			<nav className={classes.nav}>
