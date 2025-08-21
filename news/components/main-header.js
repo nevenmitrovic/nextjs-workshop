@@ -9,9 +9,6 @@ export default function MainHeader() {
 			<nav>
 				<ul>
 					<li>
-						<Link href='/'>Home</Link>
-					</li>
-					<li>
 						<Link href='/news'>News</Link>
 					</li>
 				</ul>
