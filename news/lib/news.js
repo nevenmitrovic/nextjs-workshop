@@ -6,6 +6,7 @@ const db = sql('data.db')
 
 export function getAllNews() {
 	const news = db.prepare('SELECT * FROM news').all()
+	new Promise((resolve) => setTimeout(resolve, 2000))
 	return news
 }
 
